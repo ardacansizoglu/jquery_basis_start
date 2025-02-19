@@ -12,7 +12,7 @@
     </head>
 
     <body>
-        <input id="naam" />
+        <input id="naam" /> <--!kullanıcıdan veri almak için kullanılır. -->
         <input id="mijnlist" />
         <input id="anderelist" />
         <input id="datum" />
@@ -21,6 +21,15 @@
             $(document).ready(function() {
                 $('#mijnlist').val("standaardtext");
                 $('#anderelist').val("standaardtext");
+                //$(document).ready(function() {...});: Bu, jQuery'nin ready işlevidir ve HTML belgesi tamamen yüklendiğinde ve 
+                // DOM yapısı oluşturulduğunda çalıştırılacak bir işlev tanımlar.
+                // $('#mijnlist').val("standaardtext");: id özniteliği mijnlist olan <input> elemanını seçer ve değerini "standaardtext" olarak ayarlar.
+                // $('#anderelist').val("standaardtext");: id özniteliği anderelist olan <input> elemanını 
+                // seçer ve değerini "standaardtext" olarak ayarlar.
+
+                // Selecteert het <input>-element waarvan het id-attribuut mijnlist is en stelt de waarde ervan in op "standaardtext".
+ // $('#anderelist').val("standaardtext");: <input> element waarvan het id-attribuut anderelist is
+ // selecteert en stelt de waarde in op "standaardtekst".
 
             });
         </script>

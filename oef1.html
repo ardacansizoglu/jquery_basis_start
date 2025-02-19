@@ -45,8 +45,18 @@
         <script>
             $(document).ready(function() {
                 $('tr:first').addClass('bold');
-                $('tr:nth-child(odd)').addClass('odd');
+                $('tr:nth-child(odd)').addClass('odd'); //teksira numaralari 1 3 5
             });
+//$(document).ready(function() {...});:
+//$(document).ready(): Bu jQuery işlevi, HTML belgesi tamamen yüklendiğinde ve 
+// DOM yapısı oluşturulduğunda çalıştırılacak bir işlev tanımlar. 
+// Yani, sayfa yüklendiğinde ve yapısı hazır olduğunda içindeki işlev çalıştırılacaktır.
+//function() {...}: Bu, sayfa yüklendiğinde çalıştırılacak anonim bir işlevdir.
+// //$('tr:first').addClass('bold');:
+//$('tr:first'): Bu jQuery seçici, sayfadaki ilk <tr> (tablo satırı) öğesini seçer.
+//.addClass('bold'): Bu yöntem, seçilen öğeye bold adında bir CSS sınıfı ekler.
+//  Bu sınıf, CSS dosyasında tanımlanmış stil kurallarını uygular. 
+// Örneğin, bold sınıfı metni kalın yapabilir:
     
     
     
